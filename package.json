@@ -1,17 +1,17 @@
 {
   "name": "@seahahn/editorjs-image",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "codex editor",
     "image",
     "editor.js",
     "editorjs"
   ],
-  "description": "Image Tool for Editor.js",
+  "description": "Image Tool for Editor.js with hiding caption functionality",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/editor-js/image.git"
+    "url": "git+https://github.com/seahahn/editorjs-image.git"
   },
   "files": [
     "dist"
@@ -33,7 +33,7 @@
     "lint:errors": "eslint src/ --quiet",
     "lint:fix": "eslint src/ --fix"
   },
-  "author": "CodeX <team@ifmo.su>",
+  "author": "Gyeongho Ahn <seah.ahn.nt@gmail.com>",
   "devDependencies": {
     "@codexteam/ajax": "^4.2.0",
     "@editorjs/editorjs": "2.30.0-rc.12",
@@ -55,7 +55,7 @@
     "@codexteam/icons": "^0.3.0"
   },
   "bugs": {
-    "url": "https://github.com/editor-js/image/issues"
+    "url": "https://github.com/seahahn/editorjs-image/issues"
   },
-  "homepage": "https://github.com/editor-js/image#readme"
+  "homepage": "https://github.com/seahahn/editorjs-image#readme"
 }

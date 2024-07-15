@@ -27,23 +27,21 @@ This Tool is also capable of uploading & displaying video files using the `<vide
 Get the package
 
 ```shell
-yarn add @editorjs/image
+yarn add @seahahn/editorjs-image
 ```
 
 Include module at your application
 
 ```javascript
-import ImageTool from "@editorjs/image";
+import ImageTool from "@seahahn/editorjs-image";
 ```
-
-Optionally, you can load this tool from [JsDelivr CDN](https://cdn.jsdelivr.net/npm/@editorjs/image@latest)
 
 ## Usage
 
 Add a new Tool to the `tools` property of the Editor.js initial config.
 
 ```javascript
-import ImageTool from '@editorjs/image';
+import ImageTool from '@seahahn/editorjs-image';
 
 // or if you inject ImageTool via standalone script
 const ImageTool = window.ImageTool;
