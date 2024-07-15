@@ -1,46 +1,46 @@
 /**
  * Represents options for uploading, including a function to handle previewing.
  */
-export interface UploadOptions  { 
-  onPreview: (src: string) => void 
-};
+export interface UploadOptions {
+  onPreview: (src: string) => void;
+}
 
-/** 
+/**
  * User configuration of Image block tunes. Allows to add custom tunes through the config
-*/
-export interface ActionConfig { 
+ */
+export interface ActionConfig {
   /**
    * The name of the tune.
    */
   name: string;
-  
+
   /**
    * The icon for the tune. Should be an SVG string.
    */
   icon: string;
-  
+
   /**
    * The title of the tune. This will be displayed in the UI.
    */
   title: string;
-  
+
   /**
    * An optional flag indicating whether the tune is a toggle (true) or not (false).
    */
   toggle?: boolean;
-  
+
   /**
    * An optional action function to be executed when the tune is activated.
    */
   action?: Function;
-};
+}
 
 /**
  * UploadResponseFormat interface representing the response format expected from the backend on file uploading.
  */
 export interface UploadResponseFormat<AdditionalFileData = {}> {
   /**
-   * success - 1 for successful uploading, 0 for failure 
+   * success - 1 for successful uploading, 0 for failure
    */
   success: number;
 
@@ -82,6 +82,11 @@ export type ImageToolData<Actions = {}, AdditionalFileData = {}> = {
   stretched: boolean;
 
   /**
+   * Flag indicating whether the image has a caption.
+   */
+  hideCaption: boolean;
+
+  /**
    * Object containing the URL of the image file.
    * Also can contain any additional data.
    */
@@ -102,7 +107,6 @@ export interface ImageConfig {
    * Endpoints for upload, whether using file or URL.
    */
   endpoints: {
-
     /**
      * Endpoint for file upload.
      */
@@ -148,7 +152,6 @@ export interface ImageConfig {
    * Optional custom uploader.
    */
   uploader?: {
-
     /**
      * Method to upload an image by file.
      */
