@@ -149,7 +149,7 @@
 
   &--hideCaption {
     ^&__caption {
-      display: none;
+      visibility: hidden;
     }
   }
 }
